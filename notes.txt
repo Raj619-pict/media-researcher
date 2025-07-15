@@ -1,0 +1,29 @@
+python -m venv .venv
+
+.venv\Scripts\Activate.ps1
+
+pip install fastapi 
+
+python -m pip install --upgrade pip
+
+pip install "fastapi[standard]"
+
+pip install "uvicorn[standard]"
+
+uvicorn main:app --reload
+
+new >>> 
+C:\Users\hp>psql -U postgres -h localhost
+Password for user postgres:{raj27}
+
+List available databases
+>> \l
+
+Switch connection to a new database
+>> \c dbname
+
+List available tables
+>> \dt	
+
+Describe a table such as a column, type, modifiers of columns, etc.
+>> \d table_name
